@@ -37,7 +37,10 @@
 # 以PDO 操作 MySQL 为例
 
 ```PHP
-//连上去
+/*$dsn:数据源名称，包含了请求连接到数据库的信息
+一个 DSN 由 PDO 驱动名、紧随其后的冒号、以及具体 PDO 驱动的连接语法组成,
+详见https://www.php.net/manual/zh/pdo.construct.php
+*/
 $dsn = 'mysql:dbname=php10-7;host=127.0.0.1';
 $pdo = new PDO($dsn,'数据库账号', '密码');
 
